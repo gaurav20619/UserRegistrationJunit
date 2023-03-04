@@ -16,8 +16,11 @@ public class UserRegistration {
         String email = scanner.next();
         System.out.println(userInputValidation.isValidEmail(email) ? "Valid" : "In Valid");
         System.out.println("Enter mobile number: ");
-        String mobileNumber = scanner.nextLine();
+        String mobileNumber = scanner.next();
         System.out.println(userInputValidation.isValidMobileNumber(mobileNumber) ? "Valid" : "In Valid");
+        System.out.println("Enetr password: ");
+        String password = scanner.next();
+        System.out.println(userInputValidation.isValidPassword(password) ? "Valid" : "In Valid");
         scanner.close();
 	}
 }
