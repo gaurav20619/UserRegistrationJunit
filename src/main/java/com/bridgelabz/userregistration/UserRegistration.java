@@ -15,6 +15,9 @@ public class UserRegistration {
         System.out.println("Enter email: ");
         String email = scanner.next();
         System.out.println(userInputValidation.isValidEmail(email) ? "Valid" : "In Valid");
+        System.out.println("Enter mobile number: ");
+        String mobileNumber = scanner.nextLine();
+        System.out.println(userInputValidation.isValidMobileNumber(mobileNumber) ? "Valid" : "In Valid");
         scanner.close();
 	}
 }
