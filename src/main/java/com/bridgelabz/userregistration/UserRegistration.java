@@ -9,6 +9,9 @@ public class UserRegistration {
         System.out.println("Enter first name: ");
         String firstName = scanner.next();
         System.out.println(userInputValidation.isValidFirstName(firstName) ? "Valid" : "In Valid");
+        System.out.println("Enter last name: ");
+        String lastName = scanner.next();
+        System.out.println(userInputValidation.isValidLastName(lastName) ? "Valid" : "In Valid");
         scanner.close();
 	}
 }
