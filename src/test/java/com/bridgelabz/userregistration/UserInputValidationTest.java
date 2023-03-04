@@ -39,6 +39,19 @@ public class UserInputValidationTest {
         boolean result = userInputValidation.isValidLastName("Si");
         Assert.assertFalse(result);
     }
+    @Test
+    public void givenEmail_WhenValid_ShouldReturnTrue() {
+        UserInputValidation userInputValidation = new UserInputValidation();
+        boolean result = userInputValidation.isValidEmail("gauravsingh619@gmail.com");
+        Assert.assertEquals(true, result);
+    }
+
+    @Test
+    public void givenEmail_WhenNotValid_ShouldReturnFalse() {
+        UserInputValidation userInputValidation = new UserInputValidation();
+        boolean result = userInputValidation.isValidEmail("gauravsingh..675.gmail.com");
+        Assert.assertEquals(false, result);
+    }
     
 
 }
