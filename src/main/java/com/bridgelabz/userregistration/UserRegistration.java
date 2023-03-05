@@ -21,6 +21,6 @@ public class UserRegistration {
         System.out.println("Enter password: ");
         String password = scanner.next();
         System.out.println(userInputValidation.isValidPassword(password) ? "Valid" : "In Valid");
-        scanner.close();
+        scanner.close(); 
 	}
 }
